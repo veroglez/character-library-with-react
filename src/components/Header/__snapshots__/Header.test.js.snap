@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header> renders 1`] = `
+<header
+  className="header"
+/>
+`;
+
+exports[`<Header> when {logo} 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="image logo"
+    style={
+      Object {
+        "backgroundImage": "url(image.png)",
+      }
+    }
+  />
+</header>
+`;

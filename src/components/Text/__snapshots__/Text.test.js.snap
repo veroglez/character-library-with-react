@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text> renders 1`] = `
+<p
+  className="text body"
+/>
+`;
+
+exports[`<Text> when {body} 1`] = `
+<p
+  className="text body"
+/>
+`;
+
+exports[`<Text> when {children} 1`] = `
+<p
+  className="text body"
+>
+  Lorem ipsum
+</p>
+`;
+
+exports[`<Text> when {headline} 1`] = `
+<p
+  className="text headline"
+/>
+`;
+
+exports[`<Text> when {subtitle} 1`] = `
+<p
+  className="text subtitle"
+/>
+`;

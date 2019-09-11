@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image> renders when {image} 1`] = `
+<div
+  className="image"
+  style={
+    Object {
+      "backgroundImage": "url(image.png)",
+    }
+  }
+/>
+`;
+
+exports[`<Image> when {icon} 1`] = `
+<div
+  className="icon"
+  style={
+    Object {
+      "backgroundImage": "url(image.png)",
+    }
+  }
+/>
+`;
+
+exports[`<Image> when {inherit} 1`] = `
+<div
+  className="icon styles"
+  style={
+    Object {
+      "backgroundImage": "url(image.png)",
+    }
+  }
+/>
+`;

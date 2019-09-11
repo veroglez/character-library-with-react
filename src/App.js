@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import scss from './App.module.scss';
+import { Header, Text } from './components';
+import assets from './assets';
+import l10n from './common/l10n';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header logo={assets.logo} />
+      <div className={scss.container}>
+        <Text headline>{l10n.CHARACTERS}</Text>
+      </div>
     </div>
   );
 }

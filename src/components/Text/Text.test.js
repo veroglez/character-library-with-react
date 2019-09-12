@@ -5,6 +5,7 @@ import Text from './Text';
 
 const TEXT = 'Lorem ipsum';
 const COLOR = 'green';
+const STYLES = 'styles';
 
 describe('<Text>', () => {
   it('renders', () => {
@@ -33,7 +34,7 @@ describe('<Text>', () => {
   });
 
   it('when {inherit}', () => {
-    const tree = renderer.create(<Text styles="style">{TEXT}</Text>).toJSON();
+    const tree = renderer.create(<Text styles={STYLES}>{TEXT}</Text>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

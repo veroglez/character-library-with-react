@@ -1,17 +1,44 @@
 .text {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: black;
 };
+
+.body {
+  font-size: 16px;
+}
 
 .headline {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.6px;
 }
+
 .subtitle {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
+  padding-bottom: 12px;
 }
-.body {
-  font-size: 14px;
+
+.caption {
+  border: 2px solid;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+}
+
+.yellow {
+  color: #fde145;
+  border-color: #fde145;
+}
+
+.green {
+  color: #30c52e;
+  border-color: #30c52e;
+}
+
+.orange {
+  color: #fe7250;
+  border-color: #fe7250;
 }

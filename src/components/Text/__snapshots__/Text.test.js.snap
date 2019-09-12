@@ -6,12 +6,6 @@ exports[`<Text> renders 1`] = `
 />
 `;
 
-exports[`<Text> when {body} 1`] = `
-<p
-  className="text body"
-/>
-`;
-
 exports[`<Text> when {children} 1`] = `
 <p
   className="text body"
@@ -20,10 +14,24 @@ exports[`<Text> when {children} 1`] = `
 </p>
 `;
 
+exports[`<Text> when {color} 1`] = `
+<p
+  className="text body green"
+/>
+`;
+
 exports[`<Text> when {headline} 1`] = `
 <p
   className="text headline"
 />
+`;
+
+exports[`<Text> when {inherit} 1`] = `
+<p
+  className="text body style"
+>
+  Lorem ipsum
+</p>
 `;
 
 exports[`<Text> when {subtitle} 1`] = `

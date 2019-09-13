@@ -15,34 +15,32 @@ class ProviderData extends Component {
   };
 
   state = {
+    next: '',
     characters: [],
     l10n: L10N,
   }
 
   componentDidMount() {
-    this.setState({ busy: false });
+    const service = 'character';
+    this.onFetch(service);
+  }
 
-    const services = ['character'];
-    const dataStorage = services.map(async (service) => {
-      const response = await fetch(`${C.DOMAIN}/${service}`);
-      return response.json();
-    });
-
-    Promise.all(dataStorage).then((data) => {
-      const [character] = data;
-      this.setState({ characters: character.results });
-    });
+  onFetch = async (service, next) => {
+    const { characters } = this.state;
+    const response = await fetch(next || `${C.DOMAIN}${service}`);
+    const character = await response.json();
+    this.setState({ characters: [...characters, ...character.results], next: character.info.next });
   }
 
   onData = object => this.setState(object);
 
   render() {
     const {
-      onData, props: { children },
+      onData, onFetch, props: { children },
     } = this;
 
     return (
-      <Provider value={{ ...this.state, onData }}>
+      <Provider value={{ ...this.state, onData, onFetch }}>
         { children }
       </Provider>
     );

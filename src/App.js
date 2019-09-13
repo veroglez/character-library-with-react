@@ -15,6 +15,7 @@ class App extends PureComponent {
 
   onTitle = characterName => this.setState({ characterName });
 
+
   render() {
     const {
       onTitle, state: { characterName },
@@ -23,7 +24,7 @@ class App extends PureComponent {
     return (
       <ProviderData>
         <ConsumerData>
-          {({ characters }) => (
+          {({ characters, next, onFetch }) => (
             <Fragment>
               <Header logo={assets.logo} />
               <div className={scss.header}>
@@ -38,7 +39,7 @@ class App extends PureComponent {
                   <Route
                     exact
                     path="/"
-                    render={() => <CardList characters={characters} l10n={L10N} />}
+                    render={() => <CardList onScroll={onFetch} characters={characters} next={next} l10n={L10N} />}
                   />
                   <Route
                     path="/:id"

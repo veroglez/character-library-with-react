@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ConsumerData, ProviderData } from './common/context/context';
 import scss from './App.module.scss';
 import {
-  CardList, Detail, Header, Text, SearchInput,
+  CardList, Detail, Header, Text, Tags, SearchInput,
 } from './components';
 import assets from './assets';
 import { L10N } from './common';
+
+const TAGS = ['Human', 'Humanoid', 'Alien'];
 
 class App extends PureComponent {
   state = {
@@ -34,6 +36,7 @@ class App extends PureComponent {
                 </div>
                 <SearchInput characters={characters} />
               </div>
+              <Tags characters={characters} onFilter={onFetch} tags={TAGS} />
               <BrowserRouter>
                 <Switch>
                   <Route

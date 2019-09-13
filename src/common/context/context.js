@@ -29,7 +29,7 @@ class ProviderData extends Component {
     const { characters } = this.state;
     const response = await fetch(next || `${C.DOMAIN}${service}`);
     const character = await response.json();
-    this.setState({ characters: [...characters, ...character.results], next: character.info.next });
+    this.setState({ characters: next ? [...characters, ...character.results] : character.results, next: character.info.next });
   }
 
   onData = object => this.setState(object);

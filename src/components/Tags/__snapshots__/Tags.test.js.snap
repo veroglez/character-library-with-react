@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tags> renders 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    alive
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    death
+  </div>
+</div>
+`;
+
+exports[`<Tags> renders when {tags} 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    alive
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    death
+  </div>
+</div>
+`;
+
+exports[`<Tags> when {onFilter} 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    alive
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    death
+  </div>
+</div>
+`;
+
+exports[`<Tags> when {tags} 1`] = `
+<div>
+  <div
+    onClick={[Function]}
+  >
+    alive
+  </div>
+  <div
+    onClick={[Function]}
+  >
+    death
+  </div>
+</div>
+`;

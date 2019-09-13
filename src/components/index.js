@@ -5,6 +5,7 @@ import Header from './Header';
 import Image from './Image';
 import SearchInput from './InputSearch';
 import Text from './Text';
+import Tags from './Tags';
 
 export {
   Card,
@@ -13,5 +14,6 @@ export {
   Image,
   Header,
   SearchInput,
+  Tags,
   Text,
 };

@@ -75,7 +75,7 @@ class Detail extends PureComponent {
                 ))}
               </ul>
               <div role="presentation" onClick={() => add(id, favourites, onData)}>
-                <Text styles={scss.add}>Añadir a favoritos</Text>
+                <Text styles={scss.add}>{l10n.ADD}</Text>
               </div>
             </div>
           </div>

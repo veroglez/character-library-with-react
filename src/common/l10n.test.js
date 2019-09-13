@@ -1,6 +1,6 @@
 import L10N from './l10n';
 
-const KEYS = ['CHARACTERS', 'GENDER', 'ORIGIN', 'SEARCH', 'STATUS'];
+const KEYS = ['ADD', 'CHARACTERS', 'GENDER', 'ORIGIN', 'SEARCH', 'STATUS'];
 
 describe('common:l10n', () => {
   it('keys', () => {

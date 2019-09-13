@@ -6,7 +6,7 @@ import { ProviderData } from '../../common/context/context';
 
 // const fetch = jest.fn(() => Promise.resolve());
 
-const CHARACTER_ID = 1;
+const CHARACTER_ID = '1';
 const FUNC = () => {};
 
 const HOC = inherit => (

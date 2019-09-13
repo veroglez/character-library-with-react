@@ -3,11 +3,10 @@ import {
 } from 'prop-types';
 import React, { PureComponent, createRef } from 'react';
 import { ConsumerData } from '../../common/context/context';
-
-import scss from './CardList.module.scss';
 import { Card, Tags } from '..';
-const TAGS = ['Human', 'Humanoid', 'Alien'];
+import scss from './CardList.module.scss';
 
+const TAGS = ['Human', 'Humanoid', 'Alien'];
 
 class CardList extends PureComponent {
   static propTypes = {

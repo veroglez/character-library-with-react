@@ -1,5 +1,5 @@
-import { func, number, shape } from 'prop-types';
-import React, { Fragment, PureComponent } from 'react';
+import { func, string, shape } from 'prop-types';
+import React, { PureComponent } from 'react';
 import { ConsumerData } from '../../common/context/context';
 import scss from './Detail.module.scss';
 import { Image, Text } from '..';
@@ -10,7 +10,7 @@ import assets from '../../assets';
 
 class Detail extends PureComponent {
   static propTypes = {
-    characterId: number.isRequired,
+    characterId: string.isRequired,
     l10n: shape({}).isRequired,
     onTitle: func,
   };
@@ -42,7 +42,7 @@ class Detail extends PureComponent {
 
   add = (id, favourites, onData) => {
     let data = [...new Set([...favourites.data, id])];
-    onData({ favourites: data });
+    onData({ favourites: { data } });
     data = JSON.stringify({ data });
     localStorage.setItem('rnm:favourites', data);
   }
@@ -61,7 +61,7 @@ class Detail extends PureComponent {
       <ConsumerData>
         {({ favourites, onData }) => (
           <div className={scss.container}>
-            {favourites && favourites.data.includes(id) && <Image icon image={assets.heart} styles={scss.favourites} />}
+            {favourites.data.includes(id) && <Image icon image={assets.heart} styles={scss.favourites} />}
             <Image image={image} styles={scss.image} />
             <div className={scss.info}>
               <Text caption color={onColor(species)} styles={scss.caption}>{species}</Text>
@@ -74,14 +74,13 @@ class Detail extends PureComponent {
                   </li>
                 ))}
               </ul>
-              <div onClick={() => add(id, favourites, onData)}>
+              <div role="presentation" onClick={() => add(id, favourites, onData)}>
                 <Text styles={scss.add}>Añadir a favoritos</Text>
               </div>
             </div>
           </div>
         )}
-        </ConsumerData>
-
+      </ConsumerData>
     );
   }
 }

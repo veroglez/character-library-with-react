@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ConsumerData, ProviderData } from './common/context/context';
 import scss from './App.module.scss';
 import {
-  CardList, Detail, Header, Text, Tags, SearchInput,
+  CardList, Detail, Header, Text, SearchInput,
 } from './components';
 import assets from './assets';
 import { L10N } from './common';
@@ -25,7 +25,7 @@ class App extends PureComponent {
     return (
       <ProviderData>
         <ConsumerData>
-          {({ characters, next, onFetch, favourites }) => (
+          {({ characters, next, onFetch }) => (
             <Fragment>
               <Header logo={assets.logo} />
               <div className={scss.header}>

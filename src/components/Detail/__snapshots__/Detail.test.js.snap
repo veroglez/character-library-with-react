@@ -51,6 +51,7 @@ exports[`<Detail> renders when {characterId} and {l10n} 1`] = `
     </ul>
     <div
       onClick={[Function]}
+      role="presentation"
     >
       <p
         className="undefined undefined"
@@ -113,6 +114,7 @@ exports[`<Detail> renders when {onTitle} 1`] = `
     </ul>
     <div
       onClick={[Function]}
+      role="presentation"
     >
       <p
         className="undefined undefined"

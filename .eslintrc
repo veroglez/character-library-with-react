@@ -5,7 +5,8 @@
     "document": true,
     "fetch": true,
     "localStorage": true,
-    "window": true
+    "window": true,
+    "navigator": true
   },
   "env": {
     "node": true,

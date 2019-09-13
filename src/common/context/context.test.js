@@ -37,7 +37,7 @@ describe('<Context>', () => {
     const tree = renderer.create(
       <ProviderData>
         <ConsumerData>
-          { ({ characters: { name } }) => <Text body text={name.toString()} /> }
+          { ({ characters }) => <Text body text={characters} /> }
         </ConsumerData>
       </ProviderData>,
     ).toJSON();

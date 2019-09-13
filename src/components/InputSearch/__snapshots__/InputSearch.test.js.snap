@@ -2,7 +2,6 @@
 
 exports[`<InputSearch> renders 1`] = `
 <input
-  className="input"
   name="name"
   onChange={[Function]}
   placeholder="Search..."

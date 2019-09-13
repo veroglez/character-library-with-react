@@ -4,33 +4,30 @@ exports[`<Card> renders when {link and image} 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "container",
       "href": "/link",
     },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "image image",
+          "class": "undefined",
           "style": "background-image:url(image.png)",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
-          "attribs": Object {
-            "class": "info",
-          },
+          "attribs": Object {},
           "children": Array [
             Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [],
               "name": "p",
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": Object {
                 "attribs": Object {
-                  "class": "text caption orange",
+                  "class": "undefined undefined undefined",
                 },
                 "children": Array [],
                 "name": "p",
@@ -58,7 +55,7 @@ initialize {
             },
             Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -67,7 +64,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "class": "text subtitle",
+                  "class": "undefined undefined",
                 },
                 "children": Array [],
                 "name": "p",
@@ -98,12 +95,8 @@ initialize {
           "parent": [Circular],
           "prev": [Circular],
           "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
         },
         "parent": [Circular],
         "prev": null,
@@ -118,20 +111,18 @@ initialize {
         },
       },
       Object {
-        "attribs": Object {
-          "class": "info",
-        },
+        "attribs": Object {},
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "text subtitle",
+              "class": "undefined undefined",
             },
             "children": Array [],
             "name": "p",
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -159,7 +150,7 @@ initialize {
           },
           Object {
             "attribs": Object {
-              "class": "text caption orange",
+              "class": "undefined undefined undefined",
             },
             "children": Array [],
             "name": "p",
@@ -168,7 +159,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -199,7 +190,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "image image",
+            "class": "undefined",
             "style": "background-image:url(image.png)",
           },
           "children": Array [],
@@ -219,12 +210,8 @@ initialize {
           },
         },
         "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
       },
     ],
     "name": "a",
@@ -248,11 +235,9 @@ initialize {
     },
     "type": "tag",
     "x-attribsNamespace": Object {
-      "class": undefined,
       "href": undefined,
     },
     "x-attribsPrefix": Object {
-      "class": undefined,
       "href": undefined,
     },
   },
@@ -271,33 +256,30 @@ exports[`<Card> renders when {subtitle} 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "container",
       "href": "/link",
     },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "image image",
+          "class": "undefined",
           "style": "background-image:url(image.png)",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
-          "attribs": Object {
-            "class": "info",
-          },
+          "attribs": Object {},
           "children": Array [
             Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [],
               "name": "p",
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": Object {
                 "attribs": Object {
-                  "class": "text caption orange",
+                  "class": "undefined undefined undefined",
                 },
                 "children": Array [
                   Object {
@@ -333,7 +315,7 @@ initialize {
             },
             Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [
                 Object {
@@ -350,7 +332,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "class": "text subtitle",
+                  "class": "undefined undefined",
                 },
                 "children": Array [],
                 "name": "p",
@@ -381,12 +363,8 @@ initialize {
           "parent": [Circular],
           "prev": [Circular],
           "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
         },
         "parent": [Circular],
         "prev": null,
@@ -401,20 +379,18 @@ initialize {
         },
       },
       Object {
-        "attribs": Object {
-          "class": "info",
-        },
+        "attribs": Object {},
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "text subtitle",
+              "class": "undefined undefined",
             },
             "children": Array [],
             "name": "p",
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [
                 Object {
@@ -450,7 +426,7 @@ initialize {
           },
           Object {
             "attribs": Object {
-              "class": "text caption orange",
+              "class": "undefined undefined undefined",
             },
             "children": Array [
               Object {
@@ -467,7 +443,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -498,7 +474,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "image image",
+            "class": "undefined",
             "style": "background-image:url(image.png)",
           },
           "children": Array [],
@@ -518,12 +494,8 @@ initialize {
           },
         },
         "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
       },
     ],
     "name": "a",
@@ -547,11 +519,9 @@ initialize {
     },
     "type": "tag",
     "x-attribsNamespace": Object {
-      "class": undefined,
       "href": undefined,
     },
     "x-attribsPrefix": Object {
-      "class": undefined,
       "href": undefined,
     },
   },
@@ -570,26 +540,23 @@ exports[`<Card> renders when {title} 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "container",
       "href": "/link",
     },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "image image",
+          "class": "undefined",
           "style": "background-image:url(image.png)",
         },
         "children": Array [],
         "name": "div",
         "namespace": "http://www.w3.org/1999/xhtml",
         "next": Object {
-          "attribs": Object {
-            "class": "info",
-          },
+          "attribs": Object {},
           "children": Array [
             Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [
                 Object {
@@ -604,7 +571,7 @@ initialize {
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": Object {
                 "attribs": Object {
-                  "class": "text caption orange",
+                  "class": "undefined undefined undefined",
                 },
                 "children": Array [],
                 "name": "p",
@@ -632,7 +599,7 @@ initialize {
             },
             Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -641,7 +608,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "class": "text subtitle",
+                  "class": "undefined undefined",
                 },
                 "children": Array [
                   Object {
@@ -680,12 +647,8 @@ initialize {
           "parent": [Circular],
           "prev": [Circular],
           "type": "tag",
-          "x-attribsNamespace": Object {
-            "class": undefined,
-          },
-          "x-attribsPrefix": Object {
-            "class": undefined,
-          },
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
         },
         "parent": [Circular],
         "prev": null,
@@ -700,13 +663,11 @@ initialize {
         },
       },
       Object {
-        "attribs": Object {
-          "class": "info",
-        },
+        "attribs": Object {},
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "text subtitle",
+              "class": "undefined undefined",
             },
             "children": Array [
               Object {
@@ -721,7 +682,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "class": "text caption orange",
+                "class": "undefined undefined undefined",
               },
               "children": Array [],
               "name": "p",
@@ -749,7 +710,7 @@ initialize {
           },
           Object {
             "attribs": Object {
-              "class": "text caption orange",
+              "class": "undefined undefined undefined",
             },
             "children": Array [],
             "name": "p",
@@ -758,7 +719,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "class": "text subtitle",
+                "class": "undefined undefined",
               },
               "children": Array [
                 Object {
@@ -797,7 +758,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "image image",
+            "class": "undefined",
             "style": "background-image:url(image.png)",
           },
           "children": Array [],
@@ -817,12 +778,8 @@ initialize {
           },
         },
         "type": "tag",
-        "x-attribsNamespace": Object {
-          "class": undefined,
-        },
-        "x-attribsPrefix": Object {
-          "class": undefined,
-        },
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
       },
     ],
     "name": "a",
@@ -846,11 +803,9 @@ initialize {
     },
     "type": "tag",
     "x-attribsNamespace": Object {
-      "class": undefined,
       "href": undefined,
     },
     "x-attribsPrefix": Object {
-      "class": undefined,
       "href": undefined,
     },
   },

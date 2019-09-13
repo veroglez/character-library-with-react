@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+import { string, number } from 'prop-types';
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { ConsumerData } from '../../common/context/context';
@@ -9,7 +9,7 @@ import assets from '../../assets';
 
 class Card extends PureComponent {
   static propTypes = {
-    id: string,
+    id: number,
     image: string.isRequired,
     link: string.isRequired,
     title: string,

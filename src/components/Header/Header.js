@@ -1,4 +1,4 @@
-import { string } from 'prop-types';
+import { object, string, oneOfType } from 'prop-types';
 import React from 'react';
 import { Image } from '..';
 import scss from './Header.module.scss';
@@ -10,7 +10,7 @@ const Header = ({ logo }) => (
 );
 
 Header.propTypes = {
-  logo: string,
+  logo: oneOfType([object, string]),
 };
 
 Header.defaultProps = {

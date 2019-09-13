@@ -51,7 +51,7 @@ class CardList extends PureComponent {
 
     return (
       <ConsumerData>
-        {({ favourites, onFetch }) => (
+        {({ onFetch }) => (
           <div ref={this.container} className={scss.container}>
             <Tags characters={characters} onFilter={onFetch} tags={TAGS} />
 

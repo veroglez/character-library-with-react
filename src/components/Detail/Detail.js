@@ -61,7 +61,6 @@ class Detail extends PureComponent {
       <ConsumerData>
         {({ favourites, onData }) => (
           <div className={scss.container}>
-            {console.log('fasdfa', favourites)}
             {favourites && favourites.data.includes(id) && <Image icon image={assets.heart} styles={scss.favourites} />}
             <Image image={image} styles={scss.image} />
             <div className={scss.info}>

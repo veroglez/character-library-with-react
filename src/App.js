@@ -27,7 +27,6 @@ class App extends PureComponent {
         <ConsumerData>
           {({ characters, next, onFetch, favourites }) => (
             <Fragment>
-              {console.log('fav', favourites)}
               <Header logo={assets.logo} />
               <div className={scss.header}>
                 <div>

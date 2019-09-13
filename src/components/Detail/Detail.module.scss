@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  padding: 0px 60px 40px;
+
+  .bold {
+    font-weight: 600;
+  }
+  
+  .caption {
+    padding: 6px 12px;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    width: 308px;
+    height: 246px;
+    margin-right: 40px;
+  }
+
+  .list {
+    margin-bottom: 12px;
+  }
+
+  .text {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}

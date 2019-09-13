@@ -4,6 +4,8 @@ import renderer from 'react-test-renderer';
 import Text from './Text';
 
 const TEXT = 'Lorem ipsum';
+const COLOR = 'green';
+const STYLES = 'styles';
 
 describe('<Text>', () => {
   it('renders', () => {
@@ -21,13 +23,18 @@ describe('<Text>', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('when {body}', () => {
-    const tree = renderer.create(<Text body />).toJSON();
+  it('when {color}', () => {
+    const tree = renderer.create(<Text color={COLOR} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   it('when {children}', () => {
     const tree = renderer.create(<Text>{TEXT}</Text>).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('when {inherit}', () => {
+    const tree = renderer.create(<Text styles={STYLES}>{TEXT}</Text>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

@@ -2,7 +2,7 @@
 
 exports[`<Image> renders when {image} 1`] = `
 <div
-  className="image"
+  className="undefined"
   style={
     Object {
       "backgroundImage": "url(image.png)",
@@ -13,7 +13,7 @@ exports[`<Image> renders when {image} 1`] = `
 
 exports[`<Image> when {icon} 1`] = `
 <div
-  className="icon"
+  className="undefined"
   style={
     Object {
       "backgroundImage": "url(image.png)",
@@ -24,7 +24,7 @@ exports[`<Image> when {icon} 1`] = `
 
 exports[`<Image> when {inherit} 1`] = `
 <div
-  className="icon styles"
+  className="undefined styles"
   style={
     Object {
       "backgroundImage": "url(image.png)",

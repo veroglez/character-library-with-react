@@ -4,7 +4,9 @@
   "globals": {
     "document": true,
     "fetch": true,
-    "localStorage": true
+    "localStorage": true,
+    "window": true,
+    "navigator": true
   },
   "env": {
     "node": true,

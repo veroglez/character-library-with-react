@@ -1,0 +1,37 @@
+@import "../../common/style.scss";
+
+.container {
+  border-radius: 5px;
+  border: 1px solid map-get($color, light);
+  flex: 0 1 47%;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+
+  .favourite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+  
+  @include desktop {
+    flex: 0 1 22%;
+    margin-bottom: 40px;
+  }
+
+  .info {
+    padding: 14px 14px 20px;
+  }
+
+  .image {
+    height: 120px;
+
+    @include tablet {
+      height: 250px;
+    }
+
+    @include desktop {
+      height: 150px;
+    }
+  }
+}

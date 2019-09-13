@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Context> <ConsumerData> can get properties of context 1`] = `
+<p
+  className="undefined undefined"
+/>
+`;
+
+exports[`<Context> <ConsumerData> renders 1`] = `
+<p
+  className="undefined undefined"
+/>
+`;
+
+exports[`<Context> <Context> renders 1`] = `
+Array [
+  "next",
+  "characters",
+  "l10n",
+  "favourites",
+  "onData",
+  "onFetch",
+]
+`;
+
+exports[`<Context> <ProviderData> renders 1`] = `null`;

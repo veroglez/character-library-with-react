@@ -1,0 +1,9 @@
+@import "../../common/style.scss";
+
+.input {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid map-get($color, light );
+  width: 30%;
+  padding: 2px 10px;
+}

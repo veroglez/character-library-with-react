@@ -1,17 +1,46 @@
+@import "../../common/style.scss";
+
 .text {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: black;
 };
+
+.body {
+  font-size: 16px;
+}
 
 .headline {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -0.6px;
 }
+
 .subtitle {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
+  padding-bottom: 12px;
 }
-.body {
-  font-size: 14px;
+
+.caption {
+  border: 2px solid;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+}
+
+.yellow {
+  color: map-get($color, rnm-yellow);
+  border-color: map-get($color, rnm-yellow);;
+}
+
+.green {
+  color: map-get($color, rnm-green);
+  border-color: map-get($color, rnm-green);
+}
+
+.orange {
+  color: map-get($color, rnm-orange);
+  border-color: map-get($color, rnm-orange);
 }

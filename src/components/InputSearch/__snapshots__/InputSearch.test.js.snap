@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSearch> renders 1`] = `
+<input
+  name="name"
+  onChange={[Function]}
+  placeholder="Search..."
+  type="text"
+  value=""
+/>
+`;

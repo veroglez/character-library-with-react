@@ -1,0 +1,26 @@
+@import "../../common/style.scss";
+
+.container {
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  .tag {
+    background-color: map-get($color, light);
+    border-radius: 20px;
+    margin-right: 12px;
+    padding: 8px 20px; 
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  @include tablet {
+    padding-bottom: 30px;
+  }
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -2,32 +2,40 @@
 
 exports[`<Text> renders 1`] = `
 <p
-  className="text body"
-/>
-`;
-
-exports[`<Text> when {body} 1`] = `
-<p
-  className="text body"
+  className="undefined undefined"
 />
 `;
 
 exports[`<Text> when {children} 1`] = `
 <p
-  className="text body"
+  className="undefined undefined"
 >
   Lorem ipsum
 </p>
 `;
 
+exports[`<Text> when {color} 1`] = `
+<p
+  className="undefined undefined undefined"
+/>
+`;
+
 exports[`<Text> when {headline} 1`] = `
 <p
-  className="text headline"
+  className="undefined undefined"
 />
+`;
+
+exports[`<Text> when {inherit} 1`] = `
+<p
+  className="undefined undefined styles"
+>
+  Lorem ipsum
+</p>
 `;
 
 exports[`<Text> when {subtitle} 1`] = `
 <p
-  className="text subtitle"
+  className="undefined undefined"
 />
 `;

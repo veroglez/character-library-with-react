@@ -1,0 +1,27 @@
+$color: (
+  dark: #222222,
+  light: #e3e3e3,
+  rnm-yellow: #fde145,
+  rnm-green: #30c52e,
+  rnm-orange: #fe7250,
+);
+
+$breakpoint: (
+  xs: 320px,
+  small: 600px,
+  medium: 840px,
+  large: 1024px,
+);
+
+@mixin mobileLarge { // > 321
+  @media (min-width: #{map-get($breakpoint, xs)+1}) { @content; }
+}
+@mixin tablet { // > 601
+  @media (min-width: #{map-get($breakpoint, small)+1}) { @content; }
+}
+@mixin tabletLarge {
+  @media (min-width: #{map-get($breakpoint, medium)}) { @content; }
+}
+@mixin desktop {
+  @media (min-width: #{map-get($breakpoint, large)}) { @content; }
+}

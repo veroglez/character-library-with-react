@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Detail> renders when {characterId} and {l10n} 1`] = `
+<div>
+  <div
+    className="undefined"
+    style={
+      Object {
+        "backgroundImage": "url()",
+      }
+    }
+  />
+  <div>
+    <p
+      className="undefined undefined undefined"
+    />
+    <p
+      className="undefined undefined"
+    />
+    <ul>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Gender:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Status:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Origin:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+    </ul>
+    <div
+      onClick={[Function]}
+      role="presentation"
+    >
+      <p
+        className="undefined undefined"
+      >
+        Añadir a favoritos
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Detail> renders when {onTitle} 1`] = `
+<div>
+  <div
+    className="undefined"
+    style={
+      Object {
+        "backgroundImage": "url()",
+      }
+    }
+  />
+  <div>
+    <p
+      className="undefined undefined undefined"
+    />
+    <p
+      className="undefined undefined"
+    />
+    <ul>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Gender:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Status:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+      <li>
+        <p
+          className="undefined undefined undefined undefined"
+        >
+          Origin:
+        </p>
+        <p
+          className="undefined undefined"
+        />
+      </li>
+    </ul>
+    <div
+      onClick={[Function]}
+      role="presentation"
+    >
+      <p
+        className="undefined undefined"
+      >
+        Añadir a favoritos
+      </p>
+    </div>
+  </div>
+</div>
+`;

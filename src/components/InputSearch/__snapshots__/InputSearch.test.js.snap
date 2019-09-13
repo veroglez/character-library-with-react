@@ -5,7 +5,7 @@ exports[`<InputSearch> renders 1`] = `
   className="input"
   name="name"
   onChange={[Function]}
-  placeholder="search"
+  placeholder="Search..."
   type="text"
   value=""
 />

@@ -1,10 +1,16 @@
+@import "./common/style.scss";
+
 .container {
-  padding: 30px 60px 40px;
+  padding: 10px 20px 20px;
+
+  @include tablet {
+    padding: 30px 60px 40px;
+  }
 }
 
 .header {
-  margin: 30px 60px 40px;
-  padding-bottom: 30px;
+  margin: 20px;
+  padding-bottom: 20px;
   border-image-slice: 1;
   border-image-source: -webkit-linear-gradient(
     left,
@@ -17,6 +23,11 @@
   border-bottom: 2px solid;
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    margin: 30px 60px 40px;
+    padding-bottom: 30px;
+  }
 }
 
 .text {

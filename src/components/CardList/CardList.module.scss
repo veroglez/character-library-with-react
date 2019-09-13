@@ -1,5 +1,11 @@
+@import "../../common/style.scss";
+
 .container {
-  padding: 0px 60px 40px;
+  padding: 0px 20px 40px;
+  
+  @include tablet {
+    padding: 0px 60px 40px;
+  }
 }
 
 .characters {

@@ -9,6 +9,8 @@ exports[`<Context> <ConsumerData> renders 1`] = `
 exports[`<Context> <Context> renders 1`] = `
 Array [
   "characters",
+  "l10n",
+  "busy",
   "onData",
 ]
 `;

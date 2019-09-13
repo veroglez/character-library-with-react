@@ -1,7 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-
+import { MemoryRouter } from 'react-router-dom';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import CardList from './CardList';
+
+Enzyme.configure({ adapter: new Adapter() });
 
 const CHARACTERS = [
   {
@@ -14,7 +17,7 @@ const CHARACTERS = [
 
 describe('<CardList>', () => {
   it('renders when {characters}', () => {
-    const tree = renderer.create(<CardList characters={CHARACTERS} />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const wrapper = shallow(<MemoryRouter><CardList characters={CHARACTERS} /></MemoryRouter>);
+    expect(wrapper.render()).toMatchSnapshot();
   });
 });

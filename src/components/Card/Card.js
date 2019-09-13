@@ -7,15 +7,13 @@ import onColor from '../../common/modules/onColor';
 
 class Card extends PureComponent {
   static propTypes = {
-    image: string,
-    link: string,
+    image: string.isRequired,
+    link: string.isRequired,
     title: string,
     subtitle: string,
   };
 
   static defaultProps = {
-    image: undefined,
-    link: undefined,
     title: undefined,
     subtitle: undefined,
   };

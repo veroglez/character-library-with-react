@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Context> <ConsumerData> renders 1`] = `
+<p
+  className="text body"
+/>
+`;
+
+exports[`<Context> <Context> renders 1`] = `
+Array [
+  "characters",
+  "onData",
+]
+`;
+
+exports[`<Context> <ProviderData> renders 1`] = `null`;

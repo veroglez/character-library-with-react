@@ -1,6 +1,8 @@
+@import "../../common/style.scss";
+
 .header {
   padding: 10px;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid map-get($color, light);
 
   .logo {
     height: 40px;

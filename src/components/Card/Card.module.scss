@@ -2,7 +2,7 @@
 
 .container {
   border-radius: 5px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid map-get($color, light);
   flex: 0 1 47%;
   height: auto;
   margin-bottom: 20px;

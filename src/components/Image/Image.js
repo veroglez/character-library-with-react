@@ -2,7 +2,6 @@ import React from 'react';
 import {
   bool, object, oneOfType, string,
 } from 'prop-types';
-import assets from '../../assets';
 import scss from './Image.module.scss';
 
 const Image = ({ image, icon, ...inherit }) => (

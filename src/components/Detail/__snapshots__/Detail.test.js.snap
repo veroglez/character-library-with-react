@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Detail> renders when {characterId} and {l10n} 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="image image"
+    style={
+      Object {
+        "backgroundImage": "url()",
+      }
+    }
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="text caption caption orange"
+    />
+    <p
+      className="text headline"
+    />
+    <ul>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Gender:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Status:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Origin:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<Detail> renders when {onTitle} 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="image image"
+    style={
+      Object {
+        "backgroundImage": "url()",
+      }
+    }
+  />
+  <div
+    className="info"
+  >
+    <p
+      className="text caption caption orange"
+    />
+    <p
+      className="text headline"
+    />
+    <ul>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Gender:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Status:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+      <li
+        className="list"
+      >
+        <p
+          className="text body text bold"
+        >
+          Origin:
+        </p>
+        <p
+          className="text body text"
+        />
+      </li>
+    </ul>
+  </div>
+</div>
+`;

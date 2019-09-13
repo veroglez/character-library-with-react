@@ -8,7 +8,6 @@ import {
 import assets from './assets';
 import { L10N } from './common';
 
-const TAGS = ['Human', 'Humanoid', 'Alien'];
 
 class App extends PureComponent {
   state = {
@@ -26,8 +25,9 @@ class App extends PureComponent {
     return (
       <ProviderData>
         <ConsumerData>
-          {({ characters, next, onFetch }) => (
+          {({ characters, next, onFetch, favourites }) => (
             <Fragment>
+              {console.log('fav', favourites)}
               <Header logo={assets.logo} />
               <div className={scss.header}>
                 <div>
@@ -36,7 +36,6 @@ class App extends PureComponent {
                 </div>
                 <SearchInput characters={characters} />
               </div>
-              <Tags characters={characters} onFilter={onFetch} tags={TAGS} />
               <BrowserRouter>
                 <Switch>
                   <Route

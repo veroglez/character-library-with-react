@@ -1,6 +1,7 @@
 import { arrayOf, func, string } from 'prop-types';
 import React, { PureComponent } from 'react';
 import scss from './Tags.module.scss';
+import { Text } from '..';
 
 class Tags extends PureComponent {
   static propTypes = {
@@ -17,9 +18,12 @@ class Tags extends PureComponent {
     const service = 'character?species=';
 
     return (
-      <div>
+      <div className={scss.container}>
         {tags.map((tag, index) => (
-          <div key={index.toString()} onClick={() => onFilter(`${service}${tag}`)}>{tag}</div> //eslint-disable-line
+          // eslint-disable-next-line
+          <div className={scss.tag} key={index.toString()} onClick={() => onFilter(`${service}${tag}`)}> 
+            <Text>{tag}</Text>
+          </div>
         ))}
       </div>
     );

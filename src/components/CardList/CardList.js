@@ -2,8 +2,12 @@ import {
   arrayOf, func, shape, string,
 } from 'prop-types';
 import React, { PureComponent, createRef } from 'react';
+import { ConsumerData } from '../../common/context/context';
+
 import scss from './CardList.module.scss';
-import { Card } from '..';
+import { Card, Tags } from '..';
+const TAGS = ['Human', 'Humanoid', 'Alien'];
+
 
 class CardList extends PureComponent {
   static propTypes = {
@@ -46,20 +50,26 @@ class CardList extends PureComponent {
     const { characters } = this.props;
 
     return (
-      <div ref={this.container} className={scss.container}>
-        <div className={scss.characters}>
-          {characters.map(character => (
-            <Card
-              key={character.id}
-              image={character.image}
-              id={character.id}
-              title={character.name}
-              subtitle={character.species}
-              link={`/${character.id}`}
-            />
-          ))}
-        </div>
-      </div>
+      <ConsumerData>
+        {({ favourites, onFetch }) => (
+          <div ref={this.container} className={scss.container}>
+            <Tags characters={characters} onFilter={onFetch} tags={TAGS} />
+
+            <div className={scss.characters}>
+              {characters.map(character => (
+                <Card
+                  key={character.id}
+                  image={character.image}
+                  id={character.id}
+                  title={character.name}
+                  subtitle={character.species}
+                  link={`/${character.id}`}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </ConsumerData>
     );
   }
 }

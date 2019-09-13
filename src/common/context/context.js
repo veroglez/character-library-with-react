@@ -18,6 +18,7 @@ class ProviderData extends Component {
     next: '',
     characters: [],
     l10n: L10N,
+    favourites: JSON.parse(localStorage.getItem('rnm:favourites')) || { data: [] },
   }
 
   componentDidMount() {
@@ -29,7 +30,10 @@ class ProviderData extends Component {
     const { characters } = this.state;
     const response = await fetch(next || `${C.DOMAIN}${service}`);
     const character = await response.json();
-    this.setState({ characters: next ? [...characters, ...character.results] : character.results, next: character.info.next });
+    this.setState({
+      characters: next ? [...characters, ...character.results] : character.results,
+      next: character.info.next,
+    });
   }
 
   onData = object => this.setState(object);

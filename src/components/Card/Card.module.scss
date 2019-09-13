@@ -6,6 +6,13 @@
   flex: 0 1 47%;
   height: auto;
   margin-bottom: 20px;
+  position: relative;
+
+  .favourite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
   
   @include desktop {
     flex: 0 1 22%;

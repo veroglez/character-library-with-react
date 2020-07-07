@@ -11,7 +11,7 @@ class ProviderData extends Component {
   };
 
   static defaultProps = {
-    children: undefined,
+    children: null,
   };
 
   state = {

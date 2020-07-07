@@ -14,7 +14,7 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  logo: undefined,
+  logo: null,
 };
 
 export default Header;

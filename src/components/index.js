@@ -3,7 +3,7 @@ import CardList from './CardList';
 import Detail from './Detail';
 import Header from './Header';
 import Image from './Image';
-import SearchInput from './InputSearch';
+import InputSearch from './InputSearch';
 import Text from './Text';
 import Tags from './Tags';
 
@@ -13,7 +13,7 @@ export {
   Detail,
   Image,
   Header,
-  SearchInput,
+  InputSearch,
   Tags,
   Text,
 };

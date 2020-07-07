@@ -4,8 +4,6 @@ import Detail from './Detail';
 import { L10N } from '../../common';
 import { ProviderData } from '../../common/context/context';
 
-// const fetch = jest.fn(() => Promise.resolve());
-
 const CHARACTER_ID = '1';
 const FUNC = () => {};
 

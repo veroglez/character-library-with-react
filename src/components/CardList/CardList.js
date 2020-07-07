@@ -13,12 +13,14 @@ class CardList extends PureComponent {
     characters: arrayOf(shape({})),
     onScroll: func,
     next: string,
+    onTitle: func,
   };
 
   static defaultProps = {
     characters: undefined,
     onScroll: undefined,
     next: undefined,
+    onTitle: undefined,
   }
 
   constructor(props) {
@@ -27,7 +29,9 @@ class CardList extends PureComponent {
   }
 
   componentDidMount() {
+    const { onTitle } = this.props;
     window.addEventListener('scroll', this.onScrolling, false);
+    onTitle(null);
   }
 
   componentWillUnmount() {

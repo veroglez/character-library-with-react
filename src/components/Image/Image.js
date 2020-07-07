@@ -17,7 +17,7 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
-  icon: undefined,
+  icon: null,
 };
 
 export default Image;

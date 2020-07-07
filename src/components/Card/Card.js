@@ -17,9 +17,9 @@ class Card extends PureComponent {
   };
 
   static defaultProps = {
-    id: undefined,
-    title: undefined,
-    subtitle: undefined,
+    id: null,
+    title: null,
+    subtitle: null,
   };
 
   render() {

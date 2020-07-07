@@ -29,8 +29,8 @@ Text.propTypes = {
 
 Text.defaultProps = {
   caption: false,
-  color: undefined,
-  children: undefined,
+  color: null,
+  children: null,
   headline: false,
   subtitle: false,
 };

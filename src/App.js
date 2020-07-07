@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { ConsumerData, ProviderData } from './common/context/context';
 import scss from './App.module.scss';
 import {
-  CardList, Detail, Header, Text, SearchInput,
+  CardList, Detail, Header, Text, InputSearch,
 } from './components';
 import assets from './assets';
 import { L10N } from './common';
@@ -11,11 +11,10 @@ import { L10N } from './common';
 
 class App extends PureComponent {
   state = {
-    characterName: undefined,
+    characterName: null,
   };
 
   onTitle = characterName => this.setState({ characterName });
-
 
   render() {
     const {
@@ -33,14 +32,14 @@ class App extends PureComponent {
                   <Text headline styles={scss.text}>{L10N.CHARACTERS}</Text>
                   {characterName && <Text headline styles={scss.characterName}>{`> ${characterName}`}</Text>}
                 </div>
-                <SearchInput characters={characters} />
+                <InputSearch characters={characters} />
               </div>
               <BrowserRouter>
                 <Switch>
                   <Route
                     exact
                     path="/"
-                    render={() => <CardList onScroll={onFetch} characters={characters} next={next} l10n={L10N} />}
+                    render={() => <CardList onScroll={onFetch} characters={characters} next={next} l10n={L10N} onTitle={onTitle} />}
                   />
                   <Route
                     path="/:id"

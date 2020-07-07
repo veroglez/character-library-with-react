@@ -10,7 +10,7 @@ class Tags extends PureComponent {
   };
 
   static defaultProps = {
-    onFilter: undefined,
+    onFilter: null,
   }
 
   render() {

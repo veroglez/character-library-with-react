@@ -2,7 +2,7 @@ import React, { PureComponent, Fragment } from 'react';
 import scss from './InputSearch.module.scss';
 import { ConsumerData } from '../../common/context/context';
 
-class SearchInput extends PureComponent {
+class InputSearch extends PureComponent {
   state = {
     value: '',
     busy: true,
@@ -45,4 +45,4 @@ class SearchInput extends PureComponent {
   }
 }
 
-export default SearchInput;
+export default InputSearch;

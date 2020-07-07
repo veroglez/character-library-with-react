@@ -1,4 +1,7 @@
-# RICK AND MORTY APP
+# CHARACTER LIBRARY WITH REACT
+This app is a library for Rick and Morty characters, using the [Rick and Morty API](https://rickandmortyapi.com/). You can search any character by name, filter by race and save your favourite characters.
+
+It has been implemented with React. The code has been divided into components. Each of the components has its own structure and its own style, using CSSModules. The state of the application has been managed using Context. Also, tests have been implemented, including snapshots and test for the used methods to check its functionality.
 
 ## Getting started
 
